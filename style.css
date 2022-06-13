@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General rules */
+html{
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background: linear-gradient(#3535ec, #b62897);
+  /* If I open mobile keyboard it need fixed property */
+  background-attachment: fixed;
+  color: white;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* Container */
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Logo */
+header img{
+  width: 56px;
+  height: auto;
+}
+
+/* Text area */
+textarea{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: none;
+  outline: none;
+
+  padding: 24px;
+  font-size: 20px;
+  border-radius: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Controls */
+.controls{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Play button */
+button{
+  width: 64px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f81669;
+}
+
+button img{
+  vertical-align: middle;
+}
+
+/* only when is disabled */
+button:disabled{
+  opacity: 0.5;
+  background-color: #dedede;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+button:active{
+  transform: scale(0.8);
+}
+
+
+/* Pitch controls */
+.pitch-controls{
+  width: 70%;
+}
+
+/* Tone controller */
+input{
+  width: 100%;
+  accent-color: white;
+}
+
+label{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Ducks */
+.animated-duck{
+  display: none;
+}
+
+/* Switch class with JS */
+.talking .animated-duck{
+  display: block;
+}
+
+.talking .static-duck{
+  display: none;
+}
